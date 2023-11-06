@@ -10,10 +10,30 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+
+//Top tab thingy megingy
+            HStack{
+                Image(systemName: "chevron.left")
+                    .imageScale(.large)
+                    .foregroundStyle(.tint)
+                    .bold()
+                Text("Lists")
+                    .foregroundStyle(.blue)
+                    .font(Font.system(size: 20))
+                
+                Spacer()
+                
+                Image(systemName: "square.and.arrow.up")
+                    .imageScale(.large)
+                    .foregroundStyle(.tint)
+                
+                    .padding()
+                
+                Image(systemName: "ellipsis.circle")
+                    .imageScale(.large)
+                    .foregroundStyle(.tint)
+            }
+
         }
         .padding()
     }
