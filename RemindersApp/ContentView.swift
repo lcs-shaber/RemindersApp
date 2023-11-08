@@ -102,6 +102,7 @@ struct ContentView: View {
                     .foregroundColor(.blue)
                 Spacer()
             }
+            .padding()
             
         }
         
