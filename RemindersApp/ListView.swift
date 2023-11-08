@@ -36,19 +36,20 @@ struct ListView: View {
                         HStack{
                             Text(reminder)
                                 .font(Font.system(size: 22))
-                                .fontWeight(.medium)
+                    
                             Spacer()
                         }
                         
                         HStack{
                             Text(date)
                                 .foregroundColor(.gray)
-                                .font(Font.system(size: 22))
+                                .font(Font.system(size: 19))
                             
                             Spacer()
                         }
                     }
                 }
+
             }
     }
 }
