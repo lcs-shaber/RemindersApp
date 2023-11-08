@@ -38,7 +38,7 @@ struct ContentView: View {
                 Text("To do")
                     .font(Font.system(size: 45))
                     .bold()
-                    .multilineTextAlignment(.leading)
+                    .foregroundColor(.blue)
                 
                 Spacer()
             }
@@ -51,6 +51,18 @@ struct ContentView: View {
                     )
                     ListView(reminder: "Feed Piper", date: "Tomorrow, 8:00 AM, Daily")
                 }
+            }
+            
+            HStack{
+                Image(systemName: "plus.circle.fill")
+                    .font(Font.system(size: 25))
+                    .bold()
+                    .foregroundColor(.blue)
+                Text("New Reminder")
+                    .font(Font.system(size: 25))
+                    .bold()
+                    .foregroundColor(.blue)
+                Spacer()
             }
             
         }
