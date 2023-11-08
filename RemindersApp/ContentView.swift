@@ -44,52 +44,51 @@ struct ContentView: View {
             }
             
         
-                List{
-                    Group{
-                        ListView(
-                            reminder: "Call auto body shop",
-                            date: "2023/11/16"
-                        )
-                        
-                        ListView(
-                            reminder: "Feed Piper",
-                            date: "Tomorrow, 8:00 AM, Daily"
-                        )
-                        
-                        ListView(
-                            reminder: "Write lesson about interactive apps",
-                            date: "Tomorrow, 6:00 PM"
-                        )
-                        
-                        ListView(
-                            reminder: "Take Piper to the vet",
-                            date: "2023-11-29, 3:00 PM"
-                        )
-                        
-                        ListView(
-                            reminder: "Drop off donations at Goodwill",
-                            date: "2023-11-11"
-                        )
-                        
-                        ListView(
-                            reminder: "Call plumber about clog in sink",
-                            date: "Tomorrow, 2:00 PM"
-                        )
-                        
-                        ListView(
-                            reminder: "Call dentist to schedule appointment",
-                            date: "2023-11-06, 4:00 PM"
-                        )
-                        
-                        ListView(
-                            reminder: "Call mechanic to get TARDIS repaired",
-                            date: "Tomorrow, 12:00 PM"
-                        )
-                        
+            List{
+                    Group {
+                            ListView(
+                                reminder: "Call auto body shop",
+                                date: "2023/11/16"
+                            )
+                            
+                            ListView(
+                                reminder: "Feed Piper",
+                                date: "Tomorrow, 8:00 AM, Daily"
+                            )
+                            
+                            ListView(
+                                reminder: "Write lesson about interactive apps",
+                                date: "Tomorrow, 6:00 PM"
+                            )
+                            
+                            ListView(
+                                reminder: "Take Piper to the vet",
+                                date: "2023-11-29, 3:00 PM"
+                            )
+                            
+                            ListView(
+                                reminder: "Drop off donations at Goodwill",
+                                date: "2023-11-11"
+                            )
+                            
+                            ListView(
+                                reminder: "Call plumber about clog in sink",
+                                date: "Tomorrow, 2:00 PM"
+                            )
+                            
+                            ListView(
+                                reminder: "Call dentist to schedule appointment",
+                                date: "2023-11-06, 4:00 PM"
+                            )
+                            
+                            ListView(
+                                reminder: "Call mechanic to get TARDIS repaired",
+                                date: "Tomorrow, 12:00 PM"
+                            )
+   
                     }
-                    
-                }
-            
+        }
+                
                 .listStyle(.plain)
                 
             HStack{

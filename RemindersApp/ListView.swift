@@ -16,8 +16,8 @@ struct ListView: View {
     var body: some View {
         
        
-            HStack{
-                
+            HStack {
+                VStack{
                     ZStack{
                         
                         Circle()
@@ -28,12 +28,14 @@ struct ListView: View {
                             .foregroundColor(.white)
                             .frame(width: 20)
                             .padding()
-                    
+                        
+                    }
+                    .padding(.bottom)
                 }
                 
                 Group{
-                    VStack{
-                        HStack{
+                    VStack {
+                        HStack {
                             Text(reminder)
                                 .font(Font.system(size: 22))
                     
