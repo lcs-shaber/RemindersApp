@@ -27,7 +27,6 @@ struct ListView: View {
                         Circle()
                             .foregroundColor(.white)
                             .frame(width: 20)
-                            .padding()
                         
                     }
                     .padding(.bottom)
