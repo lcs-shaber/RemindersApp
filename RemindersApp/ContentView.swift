@@ -43,16 +43,29 @@ struct ContentView: View {
                 Spacer()
             }
             
-            List{
-                Group{
-                    ListView(
-                        reminder: "Call auto body shop",
-                        date: "2023/11/16"
-                    )
-                    ListView(reminder: "Feed Piper", date: "Tomorrow, 8:00 AM, Daily")
+        
+                List{
+                    Group{
+                        ListView(
+                            reminder: "Call auto body shop",
+                            date: "2023/11/16"
+                        )
+                        
+                        ListView(
+                            reminder: "Feed Piper",
+                            date: "Tomorrow, 8:00 AM, Daily"
+                        )
+                        
+                        ListView(
+                            reminder: "Write lesson about interactive apps",
+                            date: "Tomorrow, 6:00 PM"
+                        )
+                        
+                    }
                 }
-            }
-            
+                
+                .listStyle(.plain)
+                
             HStack{
                 Image(systemName: "plus.circle.fill")
                     .font(Font.system(size: 25))
