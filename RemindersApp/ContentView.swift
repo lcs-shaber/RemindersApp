@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
 
-//Top tab thingy megingy
+//Top tab
             HStack{
                 Image(systemName: "chevron.left")
                     .imageScale(.large)
@@ -33,7 +33,26 @@ struct ContentView: View {
                     .imageScale(.large)
                     .foregroundStyle(.tint)
             }
-
+            
+            HStack{
+                Text("To do")
+                    .font(Font.system(size: 45))
+                    .bold()
+                    .multilineTextAlignment(.leading)
+                
+                Spacer()
+            }
+            
+            List{
+                Group{
+                    ListView(
+                        reminder: "Call auto body shop",
+                        date: "2023/11/16"
+                    )
+                    ListView(reminder: "Feed Piper", date: "Tomorrow, 8:00 AM, Daily")
+                }
+            }
+            
         }
         .padding()
     }
