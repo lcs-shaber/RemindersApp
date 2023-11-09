@@ -26,12 +26,12 @@ struct ContentView: View {
                     .imageScale(.large)
                     .foregroundStyle(.tint)
                 
-                    .padding()
                 
                 Image(systemName: "ellipsis.circle")
                     .imageScale(.large)
                     .foregroundStyle(.tint)
             }
+            .padding()
             
             HStack{
                 Text("To do")
